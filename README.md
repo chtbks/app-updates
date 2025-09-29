@@ -1,1 +1,32 @@
 Contains the latest versions of the apps to facilitate user update prompts.
+
+
+examples:
+
+```
+<item>
+  <!-- This value is compared to the currently installed version to determine if an update is needed -->
+  <sparkle:version>10.0.0</sparkle:version>
+  
+  <!-- Description shows in "Release Notes" section -->
+  <description>This is a critical update.</description>
+  
+  <!-- Including this section will trigger a blocking, critical update that must be installed in order to keep using the app -->
+  <sparkle:tags>
+    <sparkle:criticalUpdate></sparkle:criticalUpdate>
+  </sparkle:tags>
+  
+  <!-- This defines where the "Update now" button takes the user -->
+  <enclosure url="https://play.google.com/store/apps/details?id=com.chatbooks" sparkle:os="android" />
+  <enclosure url="https://next.chatbooks.com" sparkle:os="web" />
+</item>
+```
+
+If a new update exists after a critical update, the update will show the data (version number, release notes) from the newest, but will still behave as a critical, blocking update
+```
+<item>
+  <sparkle:version>10.0.1</sparkle:version>
+  <description>Fixed a bug with something.</description>
+  <enclosure url="https://play.google.com/store/apps/details?id=com.chatbooks" sparkle:os="android" />
+</item>
+```
