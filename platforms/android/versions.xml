@@ -17,5 +17,13 @@
             <!-- This defines where the "Update now" button takes the user -->
             <enclosure url="https://play.google.com/store/apps/details?id=com.chatbooks" sparkle:os="android" />
         </item>        
+        <item>
+            <sparkle:version>5.16.10</sparkle:version>            
+            <description>Please update, this update is required to maintain app functionality.</description>
+            <sparkle:tags>
+              <sparkle:criticalUpdate></sparkle:criticalUpdate>
+            </sparkle:tags>
+            <enclosure url="https://play.google.com/store/apps/details?id=com.chatbooks" sparkle:os="android" />
+        </item>        
     </channel>
 </rss>
