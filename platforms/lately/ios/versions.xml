@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Lately</title>
+    <item>
+      <!-- The minimum supported build number (CFBundleVersion / CURRENT_PROJECT_VERSION). Every
+      installed build lower than this is blocked. Raise it only when older builds must stop working. -->
+      <sparkle:version>2</sparkle:version>
+
+      <!-- The marketing version of that build (CFBundleShortVersionString), for humans only -->
+      <sparkle:shortVersionString>0.0.1</sparkle:shortVersionString>
+
+      <!-- Description shows as the body of the "Update required" screen -->
+      <description>Please update, this update is required to maintain app functionality.</description>
+
+      <!-- Including this section will trigger a blocking, critical update that must be installed in
+      order to keep using the app -->
+      <sparkle:tags>
+        <sparkle:criticalUpdate></sparkle:criticalUpdate>
+      </sparkle:tags>
+
+      <!-- This defines where the "Update" button takes the user. Replace with Lately's App Store
+      page once it has a listing id. -->
+      <enclosure url="https://apps.apple.com/app/idLATELY_APP_ID" sparkle:os="ios" />
+    </item>
+  </channel>
+</rss>
